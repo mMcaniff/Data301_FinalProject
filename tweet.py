@@ -7,7 +7,7 @@ class Tweet:
         self.timestamp = tweet_json.created_at
 
     def __str__(self):
-        return str(self.id) + " : " + self.user + " : " + str(self.timestamp) + " &&& " + self.text + "\n"
+        return str(self.id) + "\t" + self.user + "\t" + str(self.timestamp) + "\t" + self.text + "\n"
 
 
 

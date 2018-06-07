@@ -12,6 +12,7 @@ def process_and_store(file, tweet):
 
 def connect(user_name):
     file = codecs.open("files/" + user_name + ".txt", 'a', "utf-8")
+    file.truncate()
 
     auth = OAuthHandler(config.CONSUMER_KEY, config.CONSUMER_SECRET)
     auth.set_access_token(config.ACCESS_TOKEN, config.ACCESS_SECRET)
